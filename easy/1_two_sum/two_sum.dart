@@ -8,6 +8,9 @@
     Started on: Oct 26 2022 21:26:00
     Solved on: Oct 26 2022 21:41:00
 
+    Runtime: 853 ms
+    Memory: 143.7 MB
+
     Title: 1. Two Sum
 
     Problem:
@@ -23,9 +26,9 @@
 
 void main() {
   final int init = DateTime.now().microsecond;
-  twoSum([2,7,11,15], 9);
+  twoSum([2, 7, 11, 15], 9);
   final int end = DateTime.now().microsecond;
-  int result = end- init;
+  int result = end - init;
 
   print('Ketgan vaqt: $result');
 }

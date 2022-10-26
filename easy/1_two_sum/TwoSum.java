@@ -6,7 +6,10 @@
         Telegram: https://t.me/BahromjonPolat
 
         Started on: Oct 26 2022 21:35:25
-        Solved on: 
+        Solved on: Oct 26 2022 21:56:25
+
+        Runtime: 178 ms
+        Memory:  45.2 MB
 
         Title: 1. Two Sum
         Problem:
@@ -23,8 +26,21 @@
 
 ///Solution
 class TwoSum {
-    public static void main(String[] args) {
-        
+    public int[] twoSum(int[] nums, int target) {
+        int[] intArray = new int[2];
+        for (int i = 0; i < nums.length; i++) {
+            boolean isEqual = false;
+            for (int j = 1; j < nums.length; j++) {
+                if (nums[i] + nums[j] == target && i != j) {
+                    intArray[0] = i;
+                    intArray[1] = j;
+                    isEqual = true;
+                    break ;
+                }
+            }
+            if (isEqual) break;;
+        }
+        return  intArray;
     }
 }
 
