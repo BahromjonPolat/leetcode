@@ -35,7 +35,6 @@ void main() {
 ///Solution
 bool isPalindrome(String s) {
   String newWord = '';
-  String palindrome = '';
 
   for (var i = 0; i < s.length; i++) {
     String l = s[i].toLowerCase();
@@ -80,7 +79,6 @@ bool isPalindrome(String s) {
       newWord += l;
     }
   }
-  palindrome = newWord.split('').reversed.toList().join();
 
-  return newWord.split('').reversed.toList().join() == newWord;
+  return newWord == newWord.split('').reversed.toList().join();
 }
