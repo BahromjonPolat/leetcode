@@ -23,7 +23,7 @@
 */
 
 void main() {
-  print(isPowerOfTwo2(2));
+  print(isPowerOfTwo3(1));
 }
 
 ///Solution
@@ -59,3 +59,26 @@ bool isPowerOfTwo2(int n) {
 
   return false;
 }
+
+
+// Runtime Error
+bool isPowerOfTwo3(int n) {
+  return recursion(n) != 0;
+}
+
+int recursion(int n) {
+  if (n == 1) {
+    return n;
+  }
+
+  if (n == 2) {
+    return n;
+  }
+
+  if (n % 2 == 0) {
+    return recursion(n ~/ 2);
+  }
+  return 0;
+}
+
+
