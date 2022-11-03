@@ -8,11 +8,11 @@ import java.util.Collections;
     LinkedIn: https://linkedin.com/in/bahromjon-polat
     Telegram: https://t.me/BahromjonPolat
 
-    Started on: Nov 03 2022 17:58:12
-    Solved on: Nov 03 2022 18:04:12
+    Started on: Nov 03 2022 18:58:12
+    Solved on: Nov 03 2022 22:38:12
 
-    Runtime: 866 ms
-    Memory: 145.6 MB
+    Runtime: 37 ms
+    Memory: 43.4 MB
 
     Title: 242. Valid Anagram
 
@@ -29,35 +29,18 @@ import java.util.Collections;
 ///Solution
 class ValidAnagram {
     public static void main(String[] args) {
-        boolean isAnagram = isAnagram2("anagram",
+        boolean isAnagram = isAnagram("anagram",
                 "nagaram");
-        System.out.printf("ValidAnagram.main() isAnagram: %b", isAnagram);
+        System.out.printf("ValidAnagram.main() isAnagram: %b\n", isAnagram);
     }
 
     public static boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) {
             return false;
         }
-        char[] arr1 = new char[s.length()];
-        char[] arr2 = new char[t.length()];
 
-        for (int i = 0; i < s.length(); i++) {
-            arr1[i] = s.charAt(i);
-            arr2[i] = t.charAt(i);
-        }
-        
-        System.out.println("ValidAnagram.isAnagram() " + arr1);
-        System.out.println("ValidAnagram.isAnagram() " + arr2);
-        return arr1.toString() == arr2.toString();
-    }
-
-    public static boolean isAnagram2(String s, String t) {
-        if (s.length() != t.length()) {
-            return false;
-        }
-
-        ArrayList<Character> arr1 = new  ArrayList<Character>();
-        ArrayList<Character> arr2 = new  ArrayList<Character>();
+        ArrayList<Character> arr1 = new ArrayList<Character>();
+        ArrayList<Character> arr2 = new ArrayList<Character>();
 
         for (int i = 0; i < s.length(); i++) {
             arr1.add(s.charAt(i));
@@ -66,9 +49,6 @@ class ValidAnagram {
 
         Collections.sort(arr1);
         Collections.sort(arr2);
-        
-        System.out.println("ValidAnagram.isAnagram() " + arr1);
-        System.out.println("ValidAnagram.isAnagram() " + arr2);
-        return arr1.toString() == arr2.toString();
+        return arr1.equals(arr2);
     }
 }
