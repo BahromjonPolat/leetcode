@@ -23,6 +23,7 @@
 */
 
 void main() {
+  print(reverseWords("Let's take LeetCode contest"));
   print(reverseWords2("Let's take LeetCode contest"));
 }
 

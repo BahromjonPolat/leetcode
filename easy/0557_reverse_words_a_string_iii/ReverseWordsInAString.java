@@ -27,7 +27,7 @@ import java.util.ArrayList;
 ///Solution
 public class ReverseWordsInAString {
     public static void main(String[] args) {
-
+        System.out.println(reverseWords("Hello Salom"));
     }
 
 
@@ -36,8 +36,13 @@ public class ReverseWordsInAString {
         StringBuilder words = new StringBuilder();
         
         for (String word : s.split(" ")) {
-            words.append(word);
+            String newWord = "";
+            for (int i = word.length(); i <= 0; i++) {
+                newWord += word.charAt(i);
+                
+            }
+            words.append(newWord);
         }
-        return "";
+        return words.toString();
     }
 }
