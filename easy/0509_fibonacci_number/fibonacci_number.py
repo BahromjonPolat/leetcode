@@ -1,4 +1,4 @@
-/*
+"""
         Author: Bakhromjon Polat
 
         Github: https://github.com/BahromjonPolat
@@ -6,11 +6,11 @@
         LinkedIn: https://linkedin.com/in/bahromjon-polat
         Telegram: https://t.me/BahromjonPolat
 
-        Started on: Nov 07 2022 17:57:28
+        Started on: Nov 07 2022 20:30:28
         Solved on: Nov 07 2022 18:07:28
 
-        Runtime: 21 ms
-        Memory: 40.5 MB
+        Runtime: 1062 ms ms
+        Memory: 13.9 MB
 
         Title: 509. Fibonacci Number
         Problem:
@@ -21,17 +21,14 @@
 
         Link: https://leetcode.com/problems/fibonacci-number/
 
-*/
+"""
+class Solution:
+    def fib(self, n: int) -> int:
+        if n ==0 or n == 1: 
+            return n
+        return self.fib(n - 1) + self.fib(n -2)
 
-///Solution
-class FibonacciNumber {
-    public static void main(String[] args) {
-        System.out.println(fib(8));
-    }
+s = Solution()
+print(s.fib(8))
 
-    public static int fib(int n) {
-        if (n == 0 || n == 1) return n;
-        return fib(n - 1) + fib(n - 2);
-    }
-}
-
+        
