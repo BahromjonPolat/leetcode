@@ -37,7 +37,6 @@ String reverseWords(String s) {
   return words.join(' ');
 }
 
-
 // Runtime: 566 ms
 // Memory: 153.2 MB
 String reverseWords2(String s) {
