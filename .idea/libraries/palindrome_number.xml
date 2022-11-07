@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="palindrome_number">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/easy/0009_palindrome/palindrome_number.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

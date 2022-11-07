@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ficonacci_number">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/easy/0509_fibonacci_number/ficonacci_number.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

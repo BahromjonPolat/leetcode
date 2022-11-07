@@ -38,7 +38,7 @@ fun dayOfYear(date: String): Int {
     val day = date.subSequence(8, 10).toString().toInt();
 
     if (year % 4 == 0 && year % 100 != 0) {
-        
+
     }
     
     return 5
