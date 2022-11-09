@@ -46,3 +46,17 @@ fun addDigits(num: Int): Int {
     }
     return n.toInt()
 }
+
+fun addDigits2(num: Int) : Int {
+    var digit = 0
+    while (num > 0) {
+        digit += num % 10
+        num /= 10
+
+        if (num == 0 && digit > 9) {
+            num = digit
+            digit = 0
+        }
+    }
+    return digit
+}

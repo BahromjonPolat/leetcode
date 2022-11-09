@@ -23,10 +23,27 @@
 
 void main() {
   final int init = DateTime.now().microsecond;
-  print(addDigits(38));
+  print(addDigits2(38));
 
   final int end = DateTime.now().microsecond;
-  print(end - init);
+  print(init - end);
+}
+
+// Runtime: 526 ms
+// 143.7 MB
+int addDigits2(int num) {
+  if (num == 0) return 0;
+  int digit = 0;
+  while (num > 0) {
+    digit += num % 10;
+    num ~/= 10;
+    if (digit > 9) {
+      num = digit;
+      digit = 0;
+    }
+  }
+
+  return digit;
 }
 
 int addDigits(int num) {
